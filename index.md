@@ -3,16 +3,16 @@ layout: base
 ---
 
 <div class="card mb-5">
-  <h3 class="card-header">Organising Tools</h3>
+  <h3 id="organising-tools" class="card-header">Organising Tools</h3>
   <div class="card-body">
     <p class="card-text">Organising tools maintained within the OPEN network</p>
     <ul class="list-group list-group-flush">
       {% for tool in site.data.tools %}
       <li class="list-group-item">
-        <h4>{{ tool.name }}</h4>
+        <h4 id="{{ tool.slug }}">{{ tool.name }}</h4>
         <p>{{ tool.description }}</p>
 
-        <a href="{{ tool.page }}" class="btn btn-primary">Take a look</a>
+        <a href="/{{ tool.slug }}/" class="btn btn-primary">Take a look</a>
         <a href="{{ tool.docs }}" class="btn btn-info">User guides</a>
         <a href="{{ tool.devs }}" class="btn btn-light">For developers</a>
       </li>
@@ -23,7 +23,7 @@ layout: base
 
 
 <div class="card mb-5">
-  <h3 class="card-header">Networking Hubs</h3>
+  <h3 id="networking-hubs" class="card-header">Networking Hubs</h3>
   <div class="card-body">
     <p class="card-text">
       The digital spaces where the OPEN network communicates
@@ -44,7 +44,7 @@ layout: base
 </div>
 
 <div class="card mb-5">
-  <h3 class="card-header">OPEN Developer Resources</h3>
+  <h3 id="developer-resources" class="card-header">OPEN Developer Resources</h3>
   <div class="card-body">
     <p class="card-text"> </p>
     <ul class="list-group list-group-flush">
@@ -61,6 +61,10 @@ layout: base
   </div>
 </div>
 
-## Learn To Code (From Scratch)
 
-0. [Get Started](/learn-to-code/)
+<div class="card mb-5">
+  <h3 id="learn-to-code" class="card-header">Learn To Code (From Scratch)</h3>
+  <div class="card-body">
+    <p class="card-text"><a class="btn btn-primary" href="/learn-to-code/">Get Started</a></p>
+  </div>
+</div>

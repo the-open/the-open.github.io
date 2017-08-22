@@ -5,7 +5,7 @@
     with emails, faxes, pressure on Facebook and Twitter. Also includes
     online donations via Stripe or PayU and tools for sophisticated member
     surveys.
-  page: /speakout/
+  slug: speakout
   docs: /speakout/docs/
   devs: https://the-open.github.io/speakout/
 - name: Identity
@@ -15,7 +15,7 @@
     is meant as a warehouse for all your member interactions data with blast
     communications and top-notch segmentation and a/b testing built right in.
     It includes a light CRM, with voter file capabilities on the way.
-  page: /identity/
+  slug: identity
   docs: /identity/docs/
   devs: https://github.com/the-open/identity
 - name: DoPaisa
@@ -25,7 +25,7 @@
     DoPaisa will handle your recurring payments, one-click donation tokens,
     one-time donations, and direct debits. Currently supports Stripe, with
     PayGate (ZA) and PayU on the way.
-  page: /dopaisa/
+  slug: dopaisa
   docs: /dopaisa/docs/
   devs: https://github.com/the-open/do_paisa
 - name: WordPress Template
@@ -35,6 +35,6 @@
     proper asset management, a starter pack of the plugins that will make your
     site perform well for speed and SEO, and a Campaigns plugin that
     pulls in campaigns from ControlShift or Speakout.
-  page: ''
+  slug: 'wp-starter'
   docs: ''
   devs: ''

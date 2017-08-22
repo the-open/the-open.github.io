@@ -1,18 +1,26 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel='dns-prefetch' href='//the-open.github.io' />
-  <link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OPEN's Tech Hub</title>
+
+  <link rel="dns-prefetch" href="//the-open.github.io">
+  <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//code.jquery.com">
   <link rel="stylesheet" href="/static/site.css">
 </head>
 <body class="no_js">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-top-0 mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-top-0 mb-4">
       <a class="navbar-brand" href="/">the-open.github.io</a>
     </nav>
 
     <div class="row">
-
+      <div class="col-md-3 mb-3 d-none d-md-block">
+        {% include toc.html %}
+      </div>
       <div class="col">
       {{ content }}
       </div>
