@@ -3,3 +3,7 @@ sass:
 
 exclude:
   - node_modules
+  - .sass-cache
+  - .gitignore
+  - package.json
+  - README.md
