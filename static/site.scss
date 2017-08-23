@@ -2,6 +2,9 @@
 ---
 @import 'bootstrap';
 
+#navbar-logo {
+  max-width: 32px;
+}
 #toc-list {
   position: sticky;
   top: 15px;

@@ -1,6 +1,11 @@
 sass:
   sass_dir: 'node_modules/bootstrap/scss/'
 
+collections:
+  lessons:
+    output: true
+    permalink: /:collection/:name
+
 exclude:
   - node_modules
   - .sass-cache
