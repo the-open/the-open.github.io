@@ -4,7 +4,7 @@ sass:
 collections:
   lessons:
     output: true
-    permalink: /:collection/:name
+    permalink: /learn-to-code/:name
 
 exclude:
   - node_modules
