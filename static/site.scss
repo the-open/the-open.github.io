@@ -5,7 +5,8 @@
 #navbar-logo {
   max-width: 32px;
 }
-#toc-list {
+#toc-list, #markdown-toc {
   position: sticky;
   top: 15px;
+  @extend .mb-3;
 }
