@@ -10,3 +10,12 @@
   top: 15px;
   @extend .mb-3;
 }
+div.highlighter-rouge {
+  padding: 1rem;
+}
+pre.highlight {
+  background-color: $gray-100;
+  @extend .card;
+  padding: 1rem;
+  margin: 0;
+}

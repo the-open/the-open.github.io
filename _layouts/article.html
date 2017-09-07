@@ -5,6 +5,12 @@ layout: base
   <div id="toc-container" class="col-md-4 mb-3 col-sm-12">
   </div>
   <div class="col-md-8 col-sm-12 main">
-      {{ content }}
+    {% if page %}
+    <a href="{{ page.steps.start }}">starts here</a>
+    <br>
+    <a href="{{ page.steps.end }}">ends here</a>
+    {% endif %}
+    {{ content }}
+
   </div>
 </div>

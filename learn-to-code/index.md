@@ -1,7 +1,6 @@
 ---
 title: Learn To Code
-layout: collection
-contents:
+layout: base
 ---
 
 # Learn To Code
@@ -17,9 +16,22 @@ interactive and stylish,
 - user interactions with js # dismiss form / show thanks, show modal
 - importing css and js # import bootstrap
 - publish with github app
-- bootstrap markup modals accordians
+- bootstrap markup modals accordions
 
-{% assign lessons = site.lessons | sort: 'order' %}
-{% for lesson in lessons %}
-  1. [{{ lesson.title }}]({{ lesson.url }})
+1. Getting started. Getting set and taking the blackgirls.tech html guide
+1. Build a barebones campaign page in HTML
+1. Use CSS (stylesheets) to make it look good
+1. Including assets and Bootstrap
+1. Github pages
+1. Templates
+1. Index and Thankyou page
+1. Google analytics, javascript events
+
+## Okay
+
+
+{# assign lessons = site.lessons | sort: 'order' #}
+{# for lesson in lessons #}
+{% for lesson in site.lessons %}
+  1. [{{ lesson.title }}]({{ lesson.url }}): {{ lesson.summary }}
 {% endfor %}

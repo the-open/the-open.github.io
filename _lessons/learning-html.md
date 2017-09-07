@@ -1,107 +1,55 @@
 ---
-title: Learning HTML
+title: Make a web page for your campaign
 layout: article
 order: 1
+summary: Make a basic web page with content in left and right columns
+steps:
+  start: /learn-to-code/examples/0-bgt-html.html
+  end: /learn-to-code/examples/1-basic-html.html
 ---
 
 * Will be replaced with the ToC
 {:toc}
 
-### Your Dev Environment
+### Your campaign site
 
-    <!doctype html>
-    <html>
-      this is an html document, with very little content
-    </html>
+We're going to build on the skills you learned in the BlackGirlTech training,
+and use them to make a page like the most basic sort of page we deal with
+in activism / campaigning tech. So let's start with a basic html file that
+has some contents, and a left-hand and right-hand side.
 
-Save this file on your computer somewhere. Then open it in a browser. Do you see a little bit of content in your web browser?
+[Check it out here.](/learn-to-code/examples/1-basic-html.html) Here's a tip for
+you, on that page, right click the page and select "view source". It'll show you
+the html you're working with. You can just copy and paste the html from that
+example to get started.
 
-Great, then step one of _any_ web development project is complete: set up your development environment.
+### Layout
 
-Next: Let's talk about what's actually going on.
+You may have noticed in this page we've done something just a bit beyond what
+was covered in the BGT tutorial: we have a left and right column! We did this
+by adding a `style` attribute to the different sections (`div`s) that tells
+the div to only take up half the screen, and to sit side by side nicely with
+other elements, like this: `<div style="width: 50%; float: left"> ... </div>`.
 
-### HTML Anatomy
+If we change it to `style="width: 25%; float: left"` we can make 4 columns that
+play nicely together.
 
-The web pages you see are almost all built on the same foundation as in the example above. There's an HTML document, and at the beginning, we have this `<!doctype html>` to signal that what comes next is an HTML document – a web page!
+It's a good idea to give yourself some spacing in between the left and right-hand
+columns, so now let's add `margin-left: 5%; margin-right: 5;` to the style of
+the first `div`... see what happens...
 
-    <!doctype html>
-    <html>
-      <head>
-        <title>My Sample HTML Document</title>
-      </head>
-      <body>
-        <p>First, this html document has a head with a title.</p>
-        <p>Second, its body consists of:</p>
-        <ul>
-          <li>two paragraph elements</li>
-          <li>one "ul" unordered list</li>
-          <li>consisting of 5 elements</li>
-          <li>followed by a link</li>
-          <li>and an image</li>
-        </ul>
-        <p><a href="https://google.com">It's a link to google</a></p>
-        <img src="https://placehold.it/600x200" alt="An intentionaly blank image">
+You get a little margin for the left-hand-side, but the right hand side gets
+pushed down below. If you want your elements to line up together, the
+`width` + `margin` need to add up to 100% (or less), so let's change the width
+of the second `div` to 40%.
 
-      </body>
-    </html>
+Looking good? You should now have `<div style="width: 50%; margin-left: 5%; margin-right: 5%; float: left">` and `<div style="width: 40%; float: left">`.
 
-_NB: This HTML document might look a lot like how your email content looks if you
-get under the hood a bit, but remember that emails have their own rules which are
-not covered in this lesson! You've been warned._
+### Beginning to style
 
-When you get into styling and layout, you're going to want to make best friends
-with another element, `<div>...</div>`. Div is important because it's
-essentially a blank canvass for divvying up sections of the page.
+You may also have noticed a pretty little border on the `blockquote` element.
+That's because we added `style="border-left: 5px solid whitesmoke; padding-left: 10px"`.
+The `style` attribute is quite powerful. We can do a lot with it. [You can read more about HTML styles here.](https://www.w3schools.com/html/html_styles.asp) (looking for a better article.)
 
-### Writing the Layout
-
-We're going to create a left-hand side and a right-hand-side for our page, with
-the main text chunk on the left and the image/image on the right. We're going to
-wrap the main text section in a `div` for the left side, and wrap the image/link
-in one for the right. So our HTML tree will look like this:
-
-    - head
-      - title
-    - body
-      - div
-        - p
-        - p
-        - ul
-          - li
-          - li
-          - li
-          - li
-          - li
-      - div
-        - p
-          - a
-        - img
-
-And the Markup looks like this
-
-    <!doctype html>
-    <html>
-      <head>
-        <title>My Sample HTML Document</title>
-      </head>
-      <body>
-        <div style="min-width: 50%; float: left">
-          <p>First, this html document has a head with a title.</p>
-          <p>Second, its body consists of:</p>
-          <ul>
-            <li>two paragraph elements</li>
-            <li>one "ul" unordered list</li>
-            <li>consisting of 5 elements</li>
-            <li>followed by a link</li>
-            <li>and an image</li>
-          </ul>
-        </div>
-        <div style="min-width: 50%; float: left">
-          <p><a href="https://google.com">It's a link to google</a></p>
-          <img src="https://placehold.it/300x200" alt="An intentionaly blank image">
-        </div>
-      </body>
-    </html>
-
-create a left and right hand side. Here we have a `<div style="width: 50%; float: left">`
-which is the magical spell for making things sit side by side.
+In the next section, we'll learn about stylesheets, where you can really get serious
+about layout, typography, and even simple user interactions.
