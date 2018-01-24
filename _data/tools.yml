@@ -16,8 +16,8 @@
     communications and top-notch segmentation and a/b testing built right in.
     It includes a light CRM, with voter file capabilities on the way.
   slug: identity
-  docs: /identity/docs/
-  devs: https://github.com/the-open/identity
+  docs: https://the-open.github.io/identity/
+  devs: https://the-open.github.io/identity/
 - name: DoPaisa
   description:
     A donation-processing microservice that handles communications between
